@@ -6,4 +6,4 @@ build:
 
 typing:
 	@echo "Running mypy for type checking..."
-	docker run --rm python-typing
+	docker run --rm -v $(CURDIR)/tasks:/app/tasks:ro python-typing
